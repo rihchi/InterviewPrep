@@ -1,4 +1,5 @@
 package com.company;
+import com.company.Sequences.BestTimeToBuyAndSellStock;
 import com.company.Sequences.ContainsDuplicates;
 import com.company.Sequences.TwoSum;
 
@@ -6,8 +7,20 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-      // twoSum(true);
-        //containsDuplicates();
+        // twoSum(true);
+        // containsDuplicates();
+        bestTimeToBuyAndSellStock(false);
+    }
+
+    private static void bestTimeToBuyAndSellStock(boolean useIterative) {
+        int[] prices = new int[] {2,1,2,1,0,1,2};
+        int res = 0;
+        if (useIterative)
+            res = BestTimeToBuyAndSellStock.iterativeSolution(prices);
+        else
+            res = BestTimeToBuyAndSellStock.slidingWindowSolution(prices);
+
+        System.out.println(res);
     }
 
     private static void containsDuplicates() {
