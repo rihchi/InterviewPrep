@@ -2,6 +2,7 @@ package com.company;
 import com.company.Sequences.BestTimeToBuyAndSellStock;
 import com.company.Sequences.ContainsDuplicates;
 import com.company.Sequences.TwoSum;
+import com.company.Sequences.ValidAnagram;
 
 import java.util.Arrays;
 
@@ -9,7 +10,16 @@ public class Main {
     public static void main(String[] args) {
         // twoSum(true);
         // containsDuplicates();
-        bestTimeToBuyAndSellStock(false);
+        //estTimeToBuyAndSellStock(false);
+        validAnagram();
+    }
+
+    private static void validAnagram() {
+        String s = "anagram";
+        String t = "nagaram";
+        //boolean res = ValidAnagram.hashSolution(s, t);
+        boolean res = ValidAnagram.integerArraySolution(s, t);
+        System.out.println(res);
     }
 
     private static void bestTimeToBuyAndSellStock(boolean useIterative) {
