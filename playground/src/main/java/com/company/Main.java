@@ -1,8 +1,5 @@
 package com.company;
-import com.company.Sequences.BestTimeToBuyAndSellStock;
-import com.company.Sequences.ContainsDuplicates;
-import com.company.Sequences.TwoSum;
-import com.company.Sequences.ValidAnagram;
+import com.company.Sequences.*;
 
 import java.util.Arrays;
 
@@ -11,7 +8,15 @@ public class Main {
         // twoSum(true);
         // containsDuplicates();
         //estTimeToBuyAndSellStock(false);
-        validAnagram();
+        //validAnagram();
+        validParentheses();
+    }
+
+    private static void validParentheses() {
+        //String input = "{[]}";
+        String input = "){";
+        boolean res = ValidParentheses.solution(input);
+        System.out.println(res);
     }
 
     private static void validAnagram() {
