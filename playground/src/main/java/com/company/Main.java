@@ -5,11 +5,24 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        // twoSum(true);
-        // containsDuplicates();
+        //twoSum(true);
+        //containsDuplicates();
         //estTimeToBuyAndSellStock(false);
         //validAnagram();
-        validParentheses();
+        //validParentheses();
+        productOfArrayExceptSelf();
+    }
+
+    private static void productOfArrayExceptSelf() {
+        int[] nums = new int[] {1, 2, 3, 4};
+        int[] res = ProductOfArrayExceptSelf.solution(nums);
+        printIntArray(res);
+    }
+
+    private static void printIntArray(int[] inputArr) {
+        for (int i=0; i<inputArr.length; i++) {
+            System.out.print(inputArr[i] + " ");
+        }
     }
 
     private static void validParentheses() {
