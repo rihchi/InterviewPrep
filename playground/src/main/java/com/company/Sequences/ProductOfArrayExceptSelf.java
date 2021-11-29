@@ -8,11 +8,11 @@ public class ProductOfArrayExceptSelf {
         int[] output = new int[nums.length];
 
         // Calculate prefix products
-        int prefixVal = 1;
+        int prefixVal = nums[0];
         output[0] = 1;
         for (int i=1; i<nums.length; i++) {
             output[i] = prefixVal;
-            prefixVal = prefixVal * nums[i];
+            prefixVal *= nums[i];
         }
 
         // Calculate final output with running postfix product
@@ -23,5 +23,11 @@ public class ProductOfArrayExceptSelf {
         }
 
         return output;
+    }
+
+    private static void printIntArray(int[] inputArr) {
+        for (int i=0; i<inputArr.length; i++) {
+            System.out.print(inputArr[i] + " ");
+        }
     }
 }

@@ -14,7 +14,7 @@ public class Main {
     }
 
     private static void productOfArrayExceptSelf() {
-        int[] nums = new int[] {1, 2, 3, 4};
+        int[] nums = new int[] {-1, 1, 0, -3, 3};
         int[] res = ProductOfArrayExceptSelf.solution(nums);
         printIntArray(res);
     }
