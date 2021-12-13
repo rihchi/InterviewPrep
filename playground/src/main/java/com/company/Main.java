@@ -10,7 +10,14 @@ public class Main {
         //estTimeToBuyAndSellStock(false);
         //validAnagram();
         //validParentheses();
-        productOfArrayExceptSelf();
+        //productOfArrayExceptSelf();
+        maximumSubarray();
+    }
+
+    private static void maximumSubarray() {
+        int[] nums = new int[] {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int res = MaximumSubarray.solution(nums);
+        System.out.println(res);
     }
 
     private static void productOfArrayExceptSelf() {
